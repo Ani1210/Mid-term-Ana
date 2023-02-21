@@ -146,6 +146,9 @@ a {
     color: black;
   }
   .filter {
+    width: 90px;
+    display:flex;
+    justify-content: space-between;
     background-color: #D8D8D8;
     padding: 10px;
     border-radius: 10px;
@@ -220,7 +223,7 @@ a {
     background-color: white;
     grid-area: footer;
   }
-  .instructions {
+  .fot-list {
     padding: 40px 40px;
     /* width: 90%;
     margin: auto; */
@@ -273,3 +276,62 @@ a {
     background-color: #f2f2f2;
   }
  
+  @media all and (max-width:540px) {
+    .item1 {
+      display: none;
+    
+    }
+    .search-bar {
+      width: 200px;
+      margin-bottom: 50px;
+      margin-left: 40px;
+    }
+    .right-side {
+      width: 400px;
+    }
+    .main-nav {
+     display: none;
+    }
+    .filter {
+  margin-left: 100px;
+    
+    }
+    .flex-wrapper-1 {
+      padding-left: 30px;
+    }
+    .flex-wrapper-2 {
+      display: none;
+    }
+
+    .load-more {
+     width: 400px;
+    }
+    .top-designers-area {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    .item1 {
+      display: none;
+    }
+    .item2 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    .item2 div {
+      margin: 10px;
+    }
+    .main-nav {
+      display: none;
+     }
+     .item3 {
+       width: 90%;
+       margin: auto;
+     }
+     .flex-wrapper-2 {
+      display: none;
+    }
+  }
